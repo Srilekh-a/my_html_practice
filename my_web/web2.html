@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica ,sans-serif;
+            margin:0
+        }
+        .header{
+            padding:80px;
+            background-color: rgb(93, 199, 199);
+            color:white;
+            text-align: center;
+        }
+        .header h1{
+            font-size:50px;
+        }
+        .navbar{
+            overflow:hidden;
+            position:sticky;
+            background-color: rgb(39, 35, 35);
+            position:-webkit-sticky;
+            top:0;
+        }
+        .navbar a{
+            float:left;
+            color:white;
+            display:block;
+            padding:14px 20px;
+            text-align:center;
+            text-decoration: none;
+        }
+        .navbar a.right{
+            float:right;
+        }
+        .navbar a:hover{
+            background-color: rgb(139, 128, 128);
+            color:black
+        }
+        .navbar a.active{
+            background-color: rgb(158, 154, 154);
+            color:beige;
+        }
+        .row{
+            display:-ms-flexbox;
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .side{
+            flex:30%;
+            background-color: rgb(210, 222, 226);
+            padding:20px;
+        }
+        .main{
+            background-color: rgb(207, 155, 255);
+            padding:20px;
+            flex:70px;
+        }
+        .fakeimg{
+            background-color: rgb(171, 206, 207);
+            padding:20px;
+            width:100px;
+        }
+        .footer{
+            background-color: rgb(63, 63, 94);
+            padding:20px;
+            text-align:center;
+        }
+        @media screen and (max-width:700px){
+            .row{
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width:400px){
+            .navbar a{
+                float:none;
+                width:100px;
+                
+            }
+        }
+
+
+    </style>
+    <title>My website</title>
+    
+</head>
+<body>
+    <div class="header">
+       <h1>My Website</h1>
+       <p>my <b>responsive</b> website created by me</p>
+    </div>
+    <div class ="navbar">
+        <a href="#" class="active">Home</a>
+        <a href ="#">link</a>
+        <a href ="#">link</a>
+        <a href ="#" class="right">link</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <h2>About me</h2>
+            <h4>photo:</h4>
+            <div class="fakeimage" style="height:200px;">Image</div>
+            <p>this is about about about about</p>
+            <h3>More text</h3>
+            <p>sdhfldflksjdkfd</p>
+            <div class="fakeimg" style="height:60px;">Image</div>
+            <div class="fakeimg" style="height:60px;">Image</div>
+            <div class="fakeimg" style="height:60px;">Image</div>
+            </div>
+            <div class="main">
+                <h2>TITLE HEADING</h2>
+                <h5>description dec 7,2015</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>some text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit porro consequatur quos possimus? Aut sequi nostrum voluptates, expedita consequatur animi, saepe iusto repellat qui delectus nisi enim ducimus? Maxime, ad.</p>
+            <br>
+            <p>some text...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit porro consequatur quos possimus? Aut sequi nostrum voluptates, expedita consequatur animi, saepe iusto repellat qui delectus nisi enim ducimus? Maxime, ad.</p>
+            <br>
+            </div>
+            </div>
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+
+
+
+    
+</body>
+</html>
