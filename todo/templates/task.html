@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo_list</title>
+</head>
+<body>
+    <form method="'POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Add Task</button>
+    </form>
+    <hr>
+    <ul>
+        {%for task in tasks%}
+        <li>
+            <strong>{{task.title}}</strong>
+            ({{task.created_at|date:"M d,Y"}})
+        </li>
+        {%empty%}
+        <p>no tasks are added yet!</p>
+        {%endfor%}
+    </ul>    
+
+</body>
+</html>
