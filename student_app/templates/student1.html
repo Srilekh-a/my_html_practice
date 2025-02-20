@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student_app</title>
+</head>
+<body>
+    <form method="POST">
+    {%csrf_token%}
+    <label for=""><h5>Enter Student Name :<h5></label>
+    <input type="text" id="std_name" name="std_name" required><br><br>
+
+    <label for=""><h5>Enter Student LastName :<h5></label>
+    <input type="text" id="std_lastname" name="std_lastname" required><br><br>
+
+    <label for=""><h5>Enter Student Address :</h5></label>
+    <input type="text" id="Address" name="Address" required><br><br>
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
